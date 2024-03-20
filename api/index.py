@@ -6,6 +6,7 @@ Version:- 3.24.7
 
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
+# from dotenv import load_dotenv
 import json
 import os
 import requests
@@ -87,9 +88,9 @@ def contact():
         firts_name = firts_and_last_name[0]
 
         if get_gender_from_name(fullname)=='male':
-            firts_name = f"Mr. {firts_name.capitalize()}"
+            firts_name = f"Hello, Mr. {firts_name.capitalize()}"
         elif get_gender_from_name(firts_name)=='female':
-           firts_name = f"Mrs. {firts_name.capitalize()}"
+           firts_name = f"Hello, Mrs. {firts_name.capitalize()}"
         else:
             firts_name = f"Hello, {fullname.capitalize()}"
 
@@ -133,7 +134,7 @@ def contact():
         # Send the email
         mail.send(msg)
         # print("Email sent successfully!")
-        return render_template('about.html',data=data,style=style)
+        return render_template('contact.html',data=data,style=style)
     
     # If it's a GET request, simply render the contact form template
     return render_template('contact.html',data=data,style=style)
