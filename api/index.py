@@ -89,7 +89,7 @@ def contact():
         if get_gender_from_name(fullname)=='male':
             firts_name = f"Mr. {firts_name.capitalize()}"
         elif get_gender_from_name(firts_name)=='female':
-           firts_name = f"Mrs. {firts_name.capitalize}"
+           firts_name = f"Mrs. {firts_name.capitalize()}"
         else:
             firts_name = f"Hello, {fullname.capitalize()}"
 
