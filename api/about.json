@@ -1,0 +1,65 @@
+[
+    {
+        "Presional-Info": {
+            "Name": "RISHABH KUMAR",
+            "Email": "githubsahil4+portfolio@gmail.com",
+            "Phone": "91*********5",
+            "Birthday": "Jan 17, 2009",
+            "Location": "Ara, Bihar, India",
+            "Work": "Web Developer",
+            "Avatar": "images/my-avatar.png",
+            "Facebook_Link": "https://www.facebook.com/Rishabh.Sahil.RS",
+            "Twitter_Link": "https://twitter.com/_rishabh_sahil_",
+            "Instagram_Link": "https://www.instagram.com/ll._rsy_.ll/",
+            "About": "I'm RISHABH SAHIL. I am a Full Stack Developer from India. I have 1+ years of experience working in the software engineering domain. I have contributed to open source projects like RISHABH SEARCH ENGINE, A.I Personal Assistant, WhatsApp A.I Bot ChatGpt Java.",
+            "What_I_Am_Doing": {
+                "Web_Design": [
+                    "Web Design",
+                    "The most modern and high-quality design made at a professional level.",
+                    "images/icon-design.svg"
+                ],
+                "Web_Development": [
+                    "Web Development",
+                    "High-quality development of sites at the professional level.",
+                    "images/icon-dev.svg"
+                ],
+                "Mobile_Apps": [
+                    "Mobile Apps",
+                    "Professional development of applications for iOS and Android.",
+                    "images/icon-app.svg"
+                ],
+                "Photography": [
+                    "Photography",
+                    "I make high-quality photos of any category at a professional level.",
+                    "images/icon-photo.svg"
+                ]
+            },
+            "Developers_Info": {
+                "Yash Kumar": [
+                    "21-06-2021",
+                    "Developer Friends.",
+                    "images/avatar-1.png",
+                    "Instagram : @yash_kr.5678",
+                    {
+                        "Instagram": "https://www.instagram.com/yash_kr.5678"
+                    }
+                ],
+                "Shivam Raj": [
+                    "22-07-2022",
+                    "Developer Friends.",
+                    "images/avatar-4.png",
+                    "Instagram : @itz_raj9155",
+                    {
+                        "Instagram": "https://www.instagram.com/itz_raj9155"
+                    }
+                ]
+            },
+            "Clients": {
+                "Google": [
+                    "https://www.linkedin.com/company/google",
+                    "images/logo-1-color.png"
+                ]
+            }
+        }
+    }
+]

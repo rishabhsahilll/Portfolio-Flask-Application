@@ -1,0 +1,46 @@
+[
+    {
+        "Resume": {
+            "Education": [
+                {
+                    "Name": "DPS International School",
+                    "Join_Date_Start": "2020",
+                    "Join_Date_End": "2024",
+                    "About": "Class 7 to Class 10"
+                },
+                {
+                    "Name": "Bharati Vidyapeeth University",
+                    "Join_Date_Start": "2020",
+                    "Join_Date_End": "2021",
+                    "About": "Student of Technology in Bharati Vidyapeeth University (Google CSE)"
+                }
+            ],
+            "Experience": [
+                {
+                    "Name": "Google CSE",
+                    "Join_Date_Start": "2021",
+                    "Join_Date_End": "Present",
+                    "About": "Rishabh search engine is exactly like Google's search engine, it is built using Google's CSE, and its founder is Rishabh Kumar."
+                }
+            ],
+            "My_Skills": [
+                {
+                    "Skill_Name": "Web Design",
+                    "Skills_Percentage": 80
+                },
+                {
+                    "Skill_Name": "HTML & CSS",
+                    "Skills_Percentage": 70
+                },
+                {
+                    "Skill_Name": "Python",
+                    "Skills_Percentage": 95
+                },
+                {
+                    "Skill_Name": "Java Script",
+                    "Skills_Percentage": 85
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block blog %}
+
+<!--
+  - #NAVBAR
+-->
+
+<nav class="navbar">
+
+  <ul class="navbar-list">
+
+    <li class="navbar-item">
+      <a href="/" class="navbar-link" data-nav-link>About</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/resume" class="navbar-link" data-nav-link>Resume</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/blog" class="navbar-link active" data-nav-link>Blog</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/contact" class="navbar-link" data-nav-link>Contact</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+<!--
+    - #BLOG
+-->
+
+<article class="blog {{ style['content_active_btn'] }}" data-page="blog">
+
+  <header>
+    <h2 class="h2 article-title">Blog</h2>
+  </header>
+
+  <section class="blog-posts">
+
+    <ul class="blog-posts-list">
+
+      {% for Blog in blog_data[0]['Blog'] %}
+
+      <li class="blog-post-item">
+        <a href="{{ Blog['Link'] }}">
+
+          <figure class="blog-banner-box">
+            <img src="{{ url_for('static', filename=Blog['Image_Link']) }}" alt="Rishabh Search Engine"
+              loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">{{ Blog['Author'] }}</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">{{ Blog['Date'] }}</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">{{ Blog['Title'] }}</h3>
+
+            <p class="blog-text">
+              {{ Blog['Text'] }}
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+</article>
+
+{% endblock %}

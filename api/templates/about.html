@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block about %}
+
+<!--
+  - #NAVBAR
+-->
+
+<nav class="navbar">
+
+  <ul class="navbar-list">
+
+    <li class="navbar-item">
+      <a href="/" class="navbar-link active" data-nav-link>About</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/resume" class="navbar-link" data-nav-link>Resume</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/blog" class="navbar-link" data-nav-link>Blog</a>
+    </li>
+
+    <li class="navbar-item">
+      <a href="/contact" class="navbar-link" data-nav-link>Contact</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+<!--
+    - #ABOUT
+-->
+
+<article class="about {{ style['content_active_btn'] }}" data-page="about">
+
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+
+  <section class="about-text">
+    <p>
+      {{ data[0]['Presional-Info']['About'] }}
+    </p>
+
+    <!-- <p>
+       Wait...
+      </p> -->
+  </section>
+
+
+  <!--
+      - service
+    -->
+
+  <section class="service">
+
+    <h3 class="h3 service-title">What i'm doing</h3>
+
+    <ul class="service-list">
+
+      {% for What_I_Am_Doing in data[0]["Presional-Info"]["What_I_Am_Doing"] %}
+
+      <li class="service-item">
+
+        <div class="service-icon-box">
+          <img src="{{ url_for('static', filename=data[0]['Presional-Info']['What_I_Am_Doing'][What_I_Am_Doing][2]) }}"
+            alt="design icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">
+            {{ data[0]['Presional-Info']['What_I_Am_Doing'][What_I_Am_Doing][0] }}
+          </h4>
+
+          <p class="service-item-text">
+
+            {{ data[0]['Presional-Info']['What_I_Am_Doing'][What_I_Am_Doing][1] }}
+
+          </p>
+        </div>
+
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+
+  <!--
+      - testimonials
+    -->
+
+  <section class="testimonials">
+    <h3 class="h3 testimonials-title">Developer's</h3>
+
+    <ul class="testimonials-list has-scrollbar">
+
+      {% for Developers in data[0]['Presional-Info']['Developers_Info'] %}
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="{{ url_for('static', filename=data[0]['Presional-Info']['Developers_Info'][Developers][2]) }}"
+              alt="{{ Developers }}" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ Developers }}</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+
+            <p>
+              {{ data[0]['Presional-Info']['Developers_Info'][Developers][1] }}
+              <a href="{{ data[0]['Presional-Info']['Developers_Info'][Developers][4]['Instagram'] }}"
+                style="color: whitesmoke;">{{
+                data[0]['Presional-Info']['Developers_Info'][Developers][3] }}</a>
+            </p>
+
+          </div>
+
+        </div>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+
+  <!--
+      - testimonials modal
+    -->
+
+  <!-- <div class="modal-container" data-modal-container>
+
+      <div class="overlay" data-overlay></div>
+
+      <section class="testimonials-modal">
+
+        <button class="modal-close-btn" data-modal-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="modal-img-wrapper">
+          <figure class="modal-avatar-box">
+            <img src="{{ url_for('static', filename='images/avatar-1.png') }}" alt="Daniel lewis" width="80"
+              data-modal-img>
+          </figure>
+
+          <img src="{{ url_for('static', filename='images/icon-quote.svg') }}" alt="quote icon">
+        </div>
+
+        <div class="modal-content">
+
+          <h4 class="h3 modal-title" data-modal-title>Rishabh Kumar</h4>
+
+          <time datetime="2021-06-14">21-06-2022</time>
+
+          <div data-modal-text>
+            <p>
+              Wait...
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div> -->
+
+
+  <!--
+      - clients
+    -->
+
+  <section class="clients">
+
+    <h3 class="h3 clients-title">Clients</h3>
+
+    <ul class="clients-list has-scrollbar">
+      {% for Clients in data[0]['Presional-Info']['Clients'] %}
+      <li class="clients-item">
+        <a href="{{ data[0]['Presional-Info']['Clients'][Clients][0] }}">
+          <img src="{{ url_for('static', filename=data[0]['Presional-Info']['Clients'][Clients][1]) }}"
+            alt="client logo">
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+</article>
+
+{% endblock %}

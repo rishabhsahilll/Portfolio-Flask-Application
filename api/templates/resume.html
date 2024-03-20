@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block title %}Resume{% endblock %}
+
+{% block resume %}
+
+<!--
+  - #NAVBAR
+-->
+
+<nav class="navbar">
+
+    <ul class="navbar-list">
+
+        <li class="navbar-item">
+            <a href="/" class="navbar-link" data-nav-link>About</a>
+        </li>
+
+        <li class="navbar-item">
+            <a href="/resume" class="navbar-link active" data-nav-link>Resume</a>
+        </li>
+
+        <li class="navbar-item">
+            <a href="/portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+        </li>
+
+        <li class="navbar-item">
+            <a href="/blog" class="navbar-link" data-nav-link>Blog</a>
+        </li>
+
+        <li class="navbar-item">
+            <a href="/contact" class="navbar-link" data-nav-link>Contact</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!--
+    - #RESUME
+-->
+
+<article class="resume {{ style['content_active_btn'] }}" data-page="resume">
+
+    <header>
+        <h2 class="h2 article-title">Resume</h2>
+    </header>
+
+    <section class="timeline">
+
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+        </div>
+
+        <ol class="timeline-list">
+
+            {% for Education in resume_data[0]['Resume']['Education'] %}
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">{{ Education['Name'] }}</h4>
+
+                <span>{{ Education['Join_Date_Start'] }} — {{ Education['Join_Date_End'] }}</span>
+
+                <p class="timeline-text">
+                    {{ Education['About'] }}
+                </p>
+
+            </li>
+
+            {% endfor %}
+
+        </ol>
+
+    </section>
+
+    <section class="timeline">
+
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+        </div>
+
+        <ol class="timeline-list">
+
+            {% for Experience in resume_data[0]['Resume']['Experience'] %}
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">{{ Experience['Name'] }}</h4>
+
+                <span>{{ Experience['Join_Date_Start'] }} — {{ Experience['Join_Date_End'] }}</span>
+
+                <p class="timeline-text">
+                    {{ Experience['About'] }}
+                </p>
+
+            </li>
+
+            {% endfor %}
+
+        </ol>
+
+    </section>
+
+    <section class="skill">
+
+        <h3 class="h3 skills-title">My skills</h3>
+
+        <ul class="skills-list content-card">
+
+            {% for My_Skills in resume_data[0]['Resume']['My_Skills'] %}
+
+            <li class="skills-item">
+
+                <div class="title-wrapper">
+                    <h5 class="h5">{{ My_Skills['Skill_Name'] }}</h5>
+                    <data value="{{ My_Skills['Skills_Percentage'] }}">{{ My_Skills['Skills_Percentage'] }}%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: {{ My_Skills['Skills_Percentage'] }}%;"></div>
+                </div>
+
+            </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </section>
+
+</article>
+
+{% endblock %}
