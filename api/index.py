@@ -1,7 +1,7 @@
 '''
 Name:- Portfolio
 Developer:- RISHABH KUMAR
-Version:- 3.24.7
+Version:- 3.24.8
 '''
 
 from flask import Flask, render_template, request
@@ -138,6 +138,3 @@ def contact():
     
     # If it's a GET request, simply render the contact form template
     return render_template('contact.html',data=data,style=style)
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
