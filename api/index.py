@@ -19,7 +19,6 @@ blog_file_path = os.path.join(os.path.dirname(__file__), 'blog.json')
 with open(file=about_file_path) as f:
     data = json.load(f)
 
-
 @app.route('/')
 def about():
     style = {
@@ -80,5 +79,5 @@ def contact():
     # If it's a GET request, simply render the contact form template
     return render_template('contact.html',data=data,style=style)
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
