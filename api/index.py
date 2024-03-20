@@ -113,7 +113,7 @@ def contact():
         msg.html = f'''
             <H2><b>{firts_name}</b></H2>,
 
-            <H3>You have received a new contact form submission from your website. Here is the summary:</H3>
+            <H3>You have received a new contact form submission from Portfolio. Here is the summary:</H3>
 
             <H4>
             Name: {fullname}<br>
