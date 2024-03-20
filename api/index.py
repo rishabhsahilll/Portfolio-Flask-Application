@@ -1,7 +1,7 @@
 '''
 Name:- Portfolio
 Developer:- RISHABH KUMAR
-Version:- 3.24.4
+Version:- 3.24.5
 '''
 
 from flask import Flask, render_template, request
@@ -11,10 +11,10 @@ import os
 app = Flask(__name__)
 
 # Json Files Path
-about_file_path = os.path.join(os.path.dirname(__file__), 'data\\about.json')
-resume_file_path = os.path.join(os.path.dirname(__file__), 'data\\resume.json')
-portfolio_file_path = os.path.join(os.path.dirname(__file__), 'data\\portfolio.json')
-blog_file_path = os.path.join(os.path.dirname(__file__), 'data\\blog.json')
+about_file_path = os.path.join(os.path.dirname(__file__), 'about.json')
+resume_file_path = os.path.join(os.path.dirname(__file__), 'resume.json')
+portfolio_file_path = os.path.join(os.path.dirname(__file__), 'portfolio.json')
+blog_file_path = os.path.join(os.path.dirname(__file__), 'blog.json')
 
 # Load About Json File
 with open(file=about_file_path) as f:
