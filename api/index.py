@@ -1,11 +1,22 @@
+'''
+Name:- Portfolio
+Developer:- RISHABH KUMAR
+Version:- 3.24.2
+'''
+
 from flask import Flask, render_template, request
 import json
-
+import os
 
 app = Flask(__name__)
+# Json Files Path
+about_file_path = os.path.join(os.path.dirname(__file__), 'about.json')
+resume_file_path = os.path.join(os.path.dirname(__file__), 'resume.json')
+portfolio_file_path = os.path.join(os.path.dirname(__file__), 'portfolio.json')
+blog_file_path = os.path.join(os.path.dirname(__file__), 'blog.json')
 
 # Load About Json File
-with open('about.json') as f:
+with open(file=about_file_path) as f:
     data = json.load(f)
 
 
@@ -19,7 +30,7 @@ def about():
 @app.route('/resume')
 def resume():
     # Load Resume Json File
-    with open('resume.json') as f:
+    with open(file=resume_file_path) as f:
         resume_data = json.load(f)
 
     style = {
@@ -30,7 +41,7 @@ def resume():
 @app.route('/portfolio')
 def portfolio():
     # Load Portfolio Json File
-    with open('portfolio.json') as f:
+    with open(file=portfolio_file_path) as f:
         portfolio_data = json.load(f)
 
     style = {
@@ -41,7 +52,7 @@ def portfolio():
 @app.route('/blog')
 def blog():
     # Load Blog Json File
-    with open('blog.json') as f:
+    with open(file=blog_file_path) as f:
         blog_data = json.load(f)
         
     style = {
