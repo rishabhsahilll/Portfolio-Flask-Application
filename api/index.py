@@ -73,7 +73,7 @@ def portfolio():
     style = {
         "content_active_btn":  "active"
     }
-    return render_template('portfolio.html',data=data,style=style,portfolio_data=filtered_portfolio)
+    return render_template('portfolio.html',data=data,style=style,portfolio_data=filtered_portfolio, category=category)
 
 @app.route('/blog')
 def blog():
