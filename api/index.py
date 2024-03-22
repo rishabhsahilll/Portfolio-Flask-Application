@@ -1,7 +1,7 @@
 '''
 Name:- Portfolio
 Developer:- RISHABH KUMAR
-Version:- 3.24.8
+Version:- 3.24.9
 '''
 
 from flask import Flask, render_template, request
@@ -57,10 +57,23 @@ def portfolio():
     with open(file=portfolio_file_path) as f:
         portfolio_data = json.load(f)
 
+    category = request.args.get('category')
+    filtered_portfolio = []
+    # print(category)
+
+    if category:
+        for item in portfolio_data[0]["Portfolio"]:
+            if item["Project_Category"] == category or item["_Category"] == category:
+                filtered_portfolio.append(item)
+    else:
+        filtered_portfolio = portfolio_data[0]["Portfolio"]
+
+    # print(filtered_portfolio)
+
     style = {
         "content_active_btn":  "active"
     }
-    return render_template('portfolio.html',data=data,style=style,portfolio_data=portfolio_data)
+    return render_template('portfolio.html',data=data,style=style,portfolio_data=filtered_portfolio)
 
 @app.route('/blog')
 def blog():
@@ -138,3 +151,6 @@ def contact():
     
     # If it's a GET request, simply render the contact form template
     return render_template('contact.html',data=data,style=style)
+
+# if __name__ == '__main__':
+#     app.run(debug=True)
