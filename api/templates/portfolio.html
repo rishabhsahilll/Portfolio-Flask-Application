@@ -48,21 +48,21 @@
     <section class="projects">
 
         <ul class="filter-list">
-
+            
             <li class="filter-item">
-                <a href='/portfolio' class="active" data-filter-btn>All</a>
+                <a href='/portfolio' {% if not category %}class="active"{% endif %} data-filter-btn>All</a>
             </li>
 
             <li class="filter-item">
-                <a href='?category=web design' data-filter-btn>Web design</a>
+                <a href='?category=web design' {% if category == 'web design' %}class="active"{% endif %} data-filter-btn>Web design</a>
             </li>
 
             <li class="filter-item">
-                <a href='?category=applications' data-filter-btn>Applications</a>
+                <a href='?category=applications' {% if category == 'applications' %}class="active"{% endif %} data-filter-btn>Applications</a>
             </li>
 
             <li class="filter-item">
-                <a href='?category=web development' data-filter-btn>Web development</a>
+                <a href='?category=web development' {% if category == 'web development' %}class="active"{% endif %} data-filter-btn>Web development</a>
             </li>
 
         </ul>
