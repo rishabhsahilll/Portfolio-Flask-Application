@@ -45,33 +45,55 @@
     <header>
         <h2 class="h2 article-title">Portfolio</h2>
     </header>
+    <section class="projects">
 
-            <ul class="project-list">
+        <ul class="filter-list">
 
-                {% for Portfolio in portfolio_data[0]['Portfolio'] %}
+            <li class="filter-item">
+                <a href='/portfolio' class="active" data-filter-btn>All</a>
+            </li>
 
-                <li class="project-item  active" data-filter-item data-category="{{ Portfolio['_Category'] }}">
-                    <a href="{{ Portfolio['Project_Link'] }}">
+            <li class="filter-item">
+                <a href='?category=web design' data-filter-btn>Web design</a>
+            </li>
 
-                        <figure class="project-img">
-                            <div class="project-item-icon-box">
-                                <ion-icon name="eye-outline"></ion-icon>
-                            </div>
+            <li class="filter-item">
+                <a href='?category=applications' data-filter-btn>Applications</a>
+            </li>
 
-                            <img src="{{ url_for('static', filename=Portfolio['Project_Image_Link']) }}"
-                                alt="{{ Portfolio['Image_Alt'] }}" loading="lazy">
-                        </figure>
+            <li class="filter-item">
+                <a href='?category=web development' data-filter-btn>Web development</a>
+            </li>
 
-                        <h3 class="project-title">{{ Portfolio['Project_Title'] }}</h3>
+        </ul>
 
-                        <p class="project-category">{{ Portfolio['Project_Category'] }}</p>
+        <ul class="project-list">
 
-                    </a>
-                </li>
+            {% for Portfolio in portfolio_data %}
 
-                {% endfor %}
+            <li class="project-item  active" data-filter-item data-category="{{ Portfolio['_Category'] }}">
+                <a href="{{ Portfolio['Project_Link'] }}">
 
-            </ul>
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="{{ url_for('static', filename=Portfolio['Project_Image_Link']) }}"
+                            alt="{{ Portfolio['Image_Alt'] }}" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">{{ Portfolio['Project_Title'] }}</h3>
+
+                    <p class="project-category">{{ Portfolio['Project_Category'] }}</p>
+
+                </a>
+            </li>
+
+            {% endfor %}
+
+        </ul>
+    </section>
 
 </article>
 
