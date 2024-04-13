@@ -8,6 +8,12 @@
                     "Join_Date_End": "2024",
                     "About": "Class 7 to Class 10"
                 },
+                 {
+                    "Name": "Acharya Classes",
+                    "Join_Date_Start": "2024",
+                    "Join_Date_End": "Present",
+                    "About": "Class 11 to Class 12 (JEE)"
+                },
                 {
                     "Name": "Code With Harry",
                     "Join_Date_Start": "2020",
