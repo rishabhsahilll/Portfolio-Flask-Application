@@ -32,6 +32,14 @@
                 "Project_Link": "https://github.com/rishabhsahilll/YouTube-Facebook-Instagram-Spotifyplaylist-Downloader",
                 "Project_Image_Link": "images/project-6.png",
                 "Image_Alt": "YouTube Facebook Instagram Spotify-Playlist Downloader"
+            },
+            {
+                "Project_Title": "R.S.Y | Quotes Flask Project",
+                "Project_Category": "Web development",
+                "_Category": "web development",
+                "Project_Link": "https://github.com/rishabhsahilll/R.S.Y-Quotes-Flask-Project",
+                "Project_Image_Link": "images/project-7.png",
+                "Image_Alt": "R.S.Y | Quotes Flask Project"
             }
         ]
     }
