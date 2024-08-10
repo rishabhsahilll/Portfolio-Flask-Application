@@ -13,7 +13,7 @@
                 "Author": "Sahil",
                 "Date": "Jan 27, 2024",
                 "Title": "Rishabh Kumar - Google CSE",
-                "Text": "I'm RISHABH SAHIL. I am a Full Stack Developer from India with over 3 years of experience in software engineering. My journey in this field has led me to contribute to several impactful open-source projects. Among these are a search engine that enhances search capabilities, an A.I Personal Assistant designed for task automation, and a WhatsApp A.I Bot developed using ChatGPT in Java. These projects reflect my dedication to leveraging technology to solve real-world problems and improve user experiences.",
+                "Text": "I'm RISHABH SAHIL. I am a Full Stack Developer from India with over 3 years of experience in software engineering. My journey in this field has led me to contribute to several impactful open-source projects.",
                 "Link": "https://instagram.com/sh.imeee",
                 "Image_Link": "images/rishabh-sahil.png"
             },
@@ -23,7 +23,7 @@
                 "Title": "R.S.Y | Quotes",
                 "Text": "Explore R.S.Y Quotes today and let daily inspiration from great minds fuel your journey. Stay motivated, stay creative, and keep pushing the boundaries of what’s possible. transforming your life.",
                 "Link": "https://sahil87096.pythonanywhere.com/quote/en",
-                "Image_Link": "images/project-7"
+                "Image_Link": "images/project-7.png"
             }
         ]
     }
