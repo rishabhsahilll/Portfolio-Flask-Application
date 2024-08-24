@@ -3,9 +3,9 @@
         "Blog": [
             {
                 "Author": "Author",
-                "Date": "Jun 21, 2021",
+                "Date": "Jun 21, 2024",
                 "Title": "RISHABH SEARCH ENGINE",
-                "Text": "Rishabh Search Engine is a JavaScript library typically used in Database, Search Engineapplications. rishabh-search-engine has no bugs, it has no vulnerabilities, it has a Strong CopyleftLicense and it has low support.",
+                "Text": "Rishabh search engine is exactly like Google's search engine, it is built using Google's CSE, and its founder is Rishabh Kumar.",
                 "Link": "https://rishabhsahilll.github.io/rishabh-search-engine/",
                 "Image_Link": "images/rishabh-search-engine.png"
             },
