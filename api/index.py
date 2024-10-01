@@ -141,7 +141,7 @@ def contact():
             Best Regards,<br>
             <a href="https://bento.me/sahill-ray">RISHABH</a> <a href="https://bento.me/sahill-ray"> SAHIL</a><br>
             <a href="https://github.com/rishabhsahilll">RSE</a><br>
-            Instagram ID: <a href="https://instagram.com/sh.imeee/">@sh.imeee</a><br>
+            Instagram ID: <a href="https://instagram.com/rishabhsahill/">@rishabhsahill</a><br>
         '''
 
         # Send the email
