@@ -3,11 +3,11 @@
         "Blog": [
             {
                 "Author": "Author",
-                "Date": "Jun 21, 2024",
-                "Title": "RISHABH SEARCH ENGINE",
-                "Text": "Rishabh search engine is exactly like Google's search engine, it is built using Google's CSE, and its founder is Rishabh Kumar.",
-                "Link": "https://rishabhsahilll.github.io/rishabh-search-engine/",
-                "Image_Link": "images/rishabh-search-engine.png"
+                "Date": "Aug 10, 2024",
+                "Title": "R.S.Y | Quotes",
+                "Text": "Explore R.S.Y Quotes today and let daily inspiration from great minds fuel your journey. Stay motivated, stay creative, and keep pushing the boundaries of what’s possible. transforming your life.",
+                "Link": "https://sahil87096.pythonanywhere.com/quote/en",
+                "Image_Link": "images/project-7.png"
             },
             {
                 "Author": "Sahil",
@@ -19,11 +19,11 @@
             },
             {
                 "Author": "Author",
-                "Date": "Aug 10, 2024",
-                "Title": "R.S.Y | Quotes",
-                "Text": "Explore R.S.Y Quotes today and let daily inspiration from great minds fuel your journey. Stay motivated, stay creative, and keep pushing the boundaries of what’s possible. transforming your life.",
-                "Link": "https://sahil87096.pythonanywhere.com/quote/en",
-                "Image_Link": "images/project-7.png"
+                "Date": "Jun 21, 2024",
+                "Title": "RISHABH SEARCH ENGINE",
+                "Text": "Rishabh search engine is exactly like Google's search engine, it is built using Google's CSE, and its founder is Rishabh Kumar.",
+                "Link": "https://rishabhsahilll.github.io/rishabh-search-engine/",
+                "Image_Link": "images/rishabh-search-engine.png"
             }
         ]
     }
