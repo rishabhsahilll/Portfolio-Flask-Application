@@ -3,19 +3,19 @@
         "Blog": [
             {
                 "Author": "Author",
+                "Date": "Oct 20, 2024",
+                "Title": "Netra: Speak Without Fear",
+                "Text": "At a time when the importance of online privacy continues to grow, Netra is a unique solution. Our app is designed to provide users with a platform where they can share content freely and securely, without the fear of their identity being exposed. Netra's core principle is complete anonymity, ensuring that users' personal information is never compromised. The app gives users the ability to post content while keeping their identity hidden, with only the developer having the power to manage or delete posts.",
+                "Link": "https://netrarsy.pythonanywhere.com/",
+                "Image_Link": "images/netra-blog.png"
+            },
+            {
+                "Author": "Author",
                 "Date": "Aug 10, 2024",
                 "Title": "R.S.Y | Quotes",
                 "Text": "Explore R.S.Y Quotes today and let daily inspiration from great minds fuel your journey. Stay motivated, stay creative, and keep pushing the boundaries of what’s possible. transforming your life.",
                 "Link": "https://sahil87096.pythonanywhere.com/quote/en",
                 "Image_Link": "images/project-7.png"
-            },
-            {
-                "Author": "Sahil",
-                "Date": "Jan 27, 2024",
-                "Title": "Rishabh Kumar - Google CSE",
-                "Text": "I'm RISHABH SAHIL. I am a Full Stack Developer from India with over 3 years of experience in software engineering. My journey in this field has led me to contribute to several impactful open-source projects.",
-                "Link": "https://instagram.com/rishabhsahill",
-                "Image_Link": "images/rishabh-sahil.png"
             },
             {
                 "Author": "Author",
@@ -24,6 +24,14 @@
                 "Text": "Rishabh search engine is exactly like Google's search engine, it is built using Google's CSE, and its founder is Rishabh Kumar.",
                 "Link": "https://rishabhsahilll.github.io/rishabh-search-engine/",
                 "Image_Link": "images/rishabh-search-engine.png"
+            },
+            {
+                "Author": "Sahil",
+                "Date": "Jan 27, 2024",
+                "Title": "Rishabh Kumar - Google CSE",
+                "Text": "I'm RISHABH SAHIL. I am a Full Stack Developer from India with over 3 years of experience in software engineering. My journey in this field has led me to contribute to several impactful open-source projects.",
+                "Link": "https://instagram.com/rishabhsahill",
+                "Image_Link": "images/rishabh-sahil.png"
             }
         ]
     }
