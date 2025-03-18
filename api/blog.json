@@ -2,6 +2,14 @@
     {
         "Blog": [
             {
+                "Author": "RiShAbH",
+                "Date": "Mar 18, 2025",
+                "Title": "AI Jarvis: The Ultimate WhatsApp Smart Bot 🚀",
+                "Text": "AI Jarvis is a powerful WhatsApp bot with AI-driven chatting, image analysis, music recommendations, and system controls. Works on both mobile and laptop! 🔥",
+                "Link": "https://github.com/rishabhsahilll/AI-Jarvis-WhatsApp-Bot/",
+                "Image_Link": "images/ai-jarvis-whatsapp-bot.png"
+            },
+            {
                 "Author": "Author",
                 "Date": "Oct 20, 2024",
                 "Title": "Netra: Speak Without Fear",
